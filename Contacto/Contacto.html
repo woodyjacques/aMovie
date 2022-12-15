@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aMovie</title>
+
+    <link rel="stylesheet" href="Contacto.css">
+
+    <script defer src="Contacto.js"></script>
+    <!-- Enlazando los iconos de sol y luna-->
+   <script defer src="https://kit.fontawesome.com/dfc1eb1006.js" crossorigin="anonymous"></script>
+
+   <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+<link rel="manifest" href="../favicon_io/site.webmanifest">
+
+<!--valores del font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Spline+Sans:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <!-- CONFIGURACION DEL MENU -->
+    <header>
+      <nav class="nav">
+        <!-- Toda la parte del logo-->
+        <div class="contenedor-logo">
+          <img class="logo" src="../imagen/logo.png">
+          <a href="../index.html" class="letra-logo">aMovie</a>
+        </div>
+        <!-- Boton de luna y sol-->
+        <div class="swich-buton">
+          <button class="switch"id="switch">
+            <span class="sol"><i class="fas fa-sun"></i></span>
+            <span class="luna"><i class="fas fa-moon"></i></span>
+          </button>
+        </div>
+        <!-- Boton de cerrar y abrir el menu-->
+        <div>
+          <button class="nav-toggle visible " id="toggle">
+            <i class="toggle__line" id=""></i>
+          </button>
+        </div>
+        <!-- Menu de navegacion-->
+        <ul class="nav-menu">
+          <!--¿Que somos? -->
+          <li><a href="../index.html" class="font">Inicio
+          </a></li>
+          <!-- Submenu de redes sociales-->
+          <li><a href="#" class=" font btn-submenu-redes letra-redes">Redes sociales<i class="fas fa-caret-down"></i></a>
+            <ul class="submenu-redes">
+            <li><a class="font" href="https://bit.ly/3uA0suF"target="_blank" >Instagram</a></li>
+            <li><a class="font" href="https://bit.ly/34s62Vh"target="_blank" >Facebook</a></li>
+            <li><a class="font" href="https://bit.ly/3Jeio2g"target="_blank" >Youtube</a></li>
+            <li><a class="font" href="https://bit.ly/3HFHkz6"target="_blank">Tiktok</a></li>
+            </ul>
+          </li>
+              <!--Donar-->
+          <li><a href="../Donacion/Donacion.html" class="font">Donar<a></li>
+            <!-- submenu de idiomas-->
+          <li><a href="#" class=" font btn-submenu-idiomas letra-idioma">Idiomas<i class="fas fa-caret-down"></i></a>
+              <ul class="submenu-idiomas">
+                <li><a class="font">Portugués</a></li>
+                <li><a class="font">Francés</a></li>
+                <li><a class="font">Español</a></li>
+                <li><a class="font">Inglés</a></li>
+              </ul>
+            </li>
+              <!-- Boton iniciar -->
+              
+          <li><button id="btnsesion-google" class = "boton-sesion">Sesión Google</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="contenedor-descripcion">
+
+      <div class="descripcion">
+
+        <div>
+          <img class="mifoto" src="../imagen/foto.jpg" alt="">
+          <h1 class="letra miyo"> Hola soy Woody el desarrollador de aMovie, en la actualidad soy estudiante de Ingeniería en Sistemas Computacionales en la UCATEBA. Inventé aMovie para compartir series, películas y animes contigo. Si deseas apoyar el proyecto puedes donar, compartir la aplicacíon y seguirme en todas las redes sociales. También me puedes contactar si la aplicación presenta algún problema o para ayudarte a desarrollar tu propio proyecto web. 
+          </h1> 
+        </div>
+
+        <div class="logosredes">
+          <a href="https://bit.ly/3qgtXPX" target="_blank"><img class="logred" src="../imagen/logoins.png" alt=""></a>
+          <a href="https://bit.ly/3I7fDj6" target="_blank"><img class="logred" src="../imagen/logoface.png" alt=""></a>
+          <a href="https://bit.ly/34Nyb9O" target="_blank"><img class="logred" src="../imagen/logotwi.png" alt=""></a>
+          <a href="https://bit.ly/3JRwckm" target="_blank"><img class="logred" src="../imagen/logoyou.png" alt=""></a>
+          <a href="https://bit.ly/3t7L4oC" target="_blank"><img class="logred" src="../imagen/logotik.png" alt=""></a>
+        </div>
+
+          <form action="https://amovie-be931-default-rtdb.firebaseio.com/" method="post" class="formulario" id="formulario">
+
+            <h1 class="letra contac">Contáctame</h1>
+
+            <div class="letra formulario__grupo" id="grupo__nombre">
+              <label for="nombre" class="formulario__label">Nombre</label>
+              <div class="formulario__grupo-input">
+                <textarea type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Ingrese tu nombre"></textarea>
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+              </div>
+              <p class="formulario__input-error">Digite un nombre válido</p>
+            </div>
+
+            <div class="letra formulario__grupo" id="grupo__correo">
+              <label for="correo" class="formulario__label">Correo electrónico</label>
+              <div class="formulario__grupo-input">
+                <textarea type="correo" class="formulario__input" name="correo" id="correo" placeholder="Ingrese tu correo"></textarea>
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+              </div>
+              <p class="formulario__input-error">Digite un correo válido</p>
+            </div>
+
+            <div class="letra formulario__grupo" id="grupo__mensaje">
+              <label for="mensaje" class="formulario__label">Mensaje</label>
+              <div class="formulario__grupo-input">
+                <textarea type="mensaje" class="formulario__input" name="mensaje" id="mensaje" placeholder="Digite tu mensaje"></textarea>
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+              </div>
+              <p class="formulario__input-error">Digite un mensaje</p>
+            </div>
+
+            <div class=" letra formulario__mensaje" id="formulario__mensaje">
+              <p><i class="fas fa-exclamation-triangle"></i>Llene el fomulario</p>
+            </div>
+
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+              <button type="submit" class=" letra formulario__btn">Enviar</button>
+              <p class="letra formulario__mensaje-exito" id="formulario__mensaje-exito">Mensaje Enviado</p>
+            </div>
+        
+      </form>
+        
+      </div>
+    </div>
+
+    <footer class="contenedor-footer">
+        <div class="footer">
+            <div class="caja-des-movie">
+            <img class="logo-footer" src="../imagen/logo.png" alt="">
+            <h3 class="demovie">aMovie</h3>
+            <h1 class="des-movie">Es una plataforma desarrollada por Woody con el objetivo de compartir películas,series y animes con sus seguidores de redes sociales.</h1>
+            </div>
+            <div class="lasredes">
+              <h1 class="lared lared1">Redes sociales</h1>
+              <a href="https://bit.ly/3uA0suF"target="_blank"><h1 class="font lared">Instagram</h1></a>
+              <a href="https://bit.ly/34s62Vh"target="_blank"><h1 class="font lared">Facebook</h1></a>
+              <a href="https://bit.ly/3Jeio2g"target="_blank" ><h1 class=" font lared">YouTube</h1></a>
+              <a href="https://bit.ly/3HFHkz6"target="_blank"><h1 class=" font lared">Tiktok</h1></a>   
+            </div>
+            <div class="misredes">
+              <h1 class="lared lared2">Redes de Woody</h1>
+              <a href="https://bit.ly/3sCRyeP"target="_blank"><h1 class=" font lared">Twitch</h1></a>
+              <a href="https://bit.ly/3tqFiNC"target="_blank"><h1 class=" font lared">YouTube</h1></a>
+              <a href="https://bit.ly/3sCwsgq"target="_blank"><h1 class=" font lared">Instagram</h1></a>
+              <a href="https://bit.ly/3HGNFto"target="_blank"><h1 class=" font lared">Tiktok</h1></a>   
+            </div>
+            <div class="copi">
+              <p class="hcopi">Todos los derechos reservados © 2022 <b>aMovie</b></p>
+            </div>             
+        </div>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+
+    <script>
+      const firebaseConfig = {
+	    apiKey: "AIzaSyDqAustDiErdJlip_udPvXHrRXEIeMnkQ8",
+	    authDomain: "amovie-79bd6.firebaseapp.com",
+	    projectId: "amovie-79bd6",
+	    storageBucket: "amovie-79bd6.appspot.com",
+	    messagingSenderId: "704116904880",
+	    appId: "1:704116904880:web:7cca62fe441c4e6e34fc75"
+  };
+      firebase.initializeApp(firebaseConfig);
+    </script>
+</body>
+</html>

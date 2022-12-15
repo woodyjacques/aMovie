@@ -1,0 +1,209 @@
+<!-- html amovie-->
+
+<!DOCTYPE html>
+<html lang="ES">
+  <head>
+   <!-- AQUI ESTAN TODAS LAS METAS-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="msapplication-TileColor" content="#ffffff">
+   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+   <meta name="theme-color" content="#ffffff">
+
+	 <title>aMovie</title>
+
+     <link rel="stylesheet" href="Donacion.css">
+
+     <script defer src="Donacion.js"></script>
+
+     <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+     <link rel="manifest" href="../favicon_io/site.webmanifest">
+
+    <!-- Enlazando los iconos de sol y luna-->
+   <script src="https://kit.fontawesome.com/dfc1eb1006.js" crossorigin="anonymous"></script>
+
+<!--valores del font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Spline+Sans:wght@500&display=swap" rel="stylesheet">
+
+   </head>
+  <body>
+    <!-- CONFIGURACION DEL MENU -->
+    <header>
+      <nav class="nav">
+        <!-- Toda la parte del logo-->
+        <div class="contenedor-logo">
+          <img class="logo" src="../imagen/logo.png">
+          <a href="../index.html" class="letra-logo">aMovie</a>
+        </div>
+        <!-- Boton de luna y sol-->
+        <div class="swich-buton">
+          <button class="switch"id="switch">
+            <span class="sol"><i class="fas fa-sun"></i></span>
+            <span class="luna"><i class="fas fa-moon"></i></span>
+          </button>
+        </div>
+        <!-- Boton de cerrar y abrir el menu-->
+        <div>
+          <button class="nav-toggle visible " id="toggle">
+            <i class="toggle__line" id=""></i>
+          </button>
+        </div>
+        <!-- Menu de navegacion-->
+        <ul class="nav-menu">
+           <!--Donar-->
+           <li><a href="../index.html" class="font">Inicio<a></li>
+          <!-- Submenu de redes sociales-->
+          <li><a href="#" class=" font btn-submenu-redes letra-redes">Redes sociales<i class="fas fa-caret-down"></i></a>
+            <ul class="submenu-redes">
+            <li><a class="font" href="https://bit.ly/3uA0suF"target="_blank" >Instagram</a></li>
+            <li><a class="font" href="https://bit.ly/34s62Vh"target="_blank" >Facebook</a></li>
+            <li><a class="font" href="https://bit.ly/3Jeio2g"target="_blank" >Youtube</a></li>
+            <li><a class="font" href="https://bit.ly/3HFHkz6"target="_blank">Tiktok</a></li>
+            </ul>
+          </li>
+            <!--¿Quién soy? -->
+          <li><a href="../Contacto/Contacto.html" class="font">Contacto
+          </a></li>
+            <!-- submenu de idiomas-->
+          <li><a href="#" class=" font btn-submenu-idiomas letra-idioma">Idiomas<i class="fas fa-caret-down"></i></a>
+              <ul class="submenu-idiomas">
+                <li><a class="font">Portugués</a></li>
+                <li><a class="font">Francés</a></li>
+                <li><a class="font">Español</a></li>
+                <li><a class="font">Inglés</a></li>
+              </ul>
+            </li>
+              <!-- Boton iniciar -->
+              
+          <li><button id="sesion-google" class = "boton-sesion">Sesión Google</button></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <div class="contendor-seccion-donar">
+         <div class="seccion-donar">
+            <div class="cont-letra-donar">
+            <h1 class="letra letradonar">Donar a aMovie</h1>
+            <h2 class="letra des-donar">
+              Su donación ayuda al desarrollo, los servidores, el ancho de banda de la aplicación y para construir nuevas versiones. 
+            </h2>
+            </div>
+            <div class="tarjeta">
+              <div class="letra letra-tarjeta">Tarjeta</div>
+              <script src="https://donorbox.org/widget.js" paypalExpress="true"></script><iframe src="https://donorbox.org/embed/donacion-para-mas-versiones" name="donorbox" allowpaymentrequest="allowpaymentrequest" seamless="seamless" frameborder="0" scrolling="no" height="900px" width="100%" style="max-width: 500px; min-width: 250px; max-height:none!important"></iframe>
+            </div>
+            <div class="paypal">
+              <h1 class="letra conpaypal">Paypal</h1>
+               <div id="donate-button-container">
+                <div id="donate-button"></div>
+                 <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+                 <script>
+                 PayPal.Donation.Button({
+                env:'production',
+                hosted_button_id:'W9EZ7AWLHEJS2',
+                image: {
+                src:'https://pics.paypal.com/00/s/NWRhYmFlMzUtZTc4Ni00NjBiLWIxZTQtMjExMzVhY2IzODEw/file.PNG',
+                alt:'Donate with PayPal button',
+                title:'PayPal - The safer, easier way to pay online!',
+                }
+                }).render('#donate-button');
+                </script>
+               </div>                  
+            </div>
+            <div class="carrousel">
+              <div class="grande">
+
+                <div class="cont1">
+                  <h1 class="letra done">Done con Bitcoin</h1>
+                  <img class="img" src="../imagen/direccion-bitcoin.jpg" alt="">
+                  <input class="input1" type="text" value="bc1q09x4aed5ujhuz6ru9l73xeljzt0qfwfw4wz7ru">
+                  <div>
+                    <button class="letra copiar1 boton">Copiar</button>
+                  </div>
+                  <span class="letra message" id="message1"></span>
+                </div>
+
+                <div class="cont2">
+                  <h1 class="letra done">Done con Ether</h1>
+                  <img class="img" src="../imagen/direccion-ether.jpg" alt="">
+                  <input class="input2" type="text" value="0x91C083a1c6A7186Ed08eb3898f98852fCc5237fF">
+                  <div>
+                    <button class="letra copiar2 boton">Copiar</button>
+                  </div>
+                  <span class="letra message" id="message2"></span>
+                </div>
+
+                <div class="cont3">
+                  <h1 class="letra done"> Done con BNB</h1>
+                  <img class="img" src="../imagen/direccion-bnb.jpg" alt="">
+                  <input class="input3" type="text" value="bnb19mqhe9s8au472fdk6g3hajm4xjhwwzayw7hdsu">
+                  <div>
+                    <button class="letra copiar3 boton">Copiar</button>
+                  </div>
+                  <span class="letra message" id="message3"></span>
+                </div>
+              </div>
+
+              <ul class="puntos">
+                <img class="punto" src="../imagen/logo-bitcoin.png" alt="">
+                <img class="punto" src="../imagen/logo-eter .png" alt="">
+                <img class="punto" src="../imagen/logo-bnb.png" alt="">
+              </ul>
+               
+            </div>
+          </div>
+    </div>
+
+    <footer class="contenedor-footer">
+      <div class="footer">
+          <div class="caja-des-movie">
+          <img class="logo-footer" src="../imagen/logo.png" alt="">
+          <h3 class="demovie">aMovie</h3>
+          <h1 class="des-movie">Es una plataforma desarrollada por Woody con el objetivo de compartir películas,series y animes con sus seguidores de redes sociales.</h1>
+          </div>
+          <div class="lasredes">
+            <h1 class="lared lared1">Redes sociales</h1>
+            <a href="https://bit.ly/3uA0suF"target="_blank"><h1 class="font lared">Instagram</h1></a>
+            <a href="https://bit.ly/34s62Vh"target="_blank"><h1 class="font lared">Facebook</h1></a>
+            <a href="https://bit.ly/3Jeio2g"target="_blank" ><h1 class=" font lared">YouTube</h1></a>
+            <a href="https://bit.ly/3HFHkz6"target="_blank"><h1 class=" font lared">Tiktok</h1></a>   
+          </div>
+          <div class="misredes">
+            <h1 class="lared lared2">Redes de Woody</h1>
+            <a href="https://bit.ly/3sCRyeP"target="_blank"><h1 class=" font lared">Twitch</h1></a>
+            <a href="https://bit.ly/3tqFiNC"target="_blank"><h1 class=" font lared">YouTube</h1></a>
+            <a href="https://bit.ly/3sCwsgq"target="_blank"><h1 class=" font lared">Instagram</h1></a>
+            <a href="https://bit.ly/3HGNFto"target="_blank"><h1 class=" font lared">Tiktok</h1></a>   
+          </div>
+          <div class="copi">
+            <p class="hcopi">Todos los derechos reservados © 2022 <b>aMovie</b></p>
+          </div>             
+      </div>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+
+    <script>
+      const firebaseConfig = {
+	    apiKey: "AIzaSyDqAustDiErdJlip_udPvXHrRXEIeMnkQ8",
+	    authDomain: "amovie-79bd6.firebaseapp.com",
+	    projectId: "amovie-79bd6",
+	    storageBucket: "amovie-79bd6.appspot.com",
+	    messagingSenderId: "704116904880",
+	    appId: "1:704116904880:web:7cca62fe441c4e6e34fc75"
+  };
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+  </body>
+</html>
+
+
+

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ES">
+  <head>
+   <!-- AQUI ESTAN TODAS LAS METAS-->
+	 <meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="msapplication-TileColor" content="#ffffff">
+   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+   <meta name="theme-color" content="#ffffff">
+
+	 <title>aMovie</title>
+
+<!--enlazando los estilos-->
+<link rel="stylesheet" href="index.css">
+
+<!--enlazando el js-->
+<script defer src="index.js"></script>
+
+   <!-- Enlazando app js-->
+   <script defer src="Archivos js/app.js" type="module"></script>
+
+    <!-- Enlazando los iconos de sol y luna-->
+   <script src="https://kit.fontawesome.com/dfc1eb1006.js" crossorigin="anonymous"></script>
+
+<link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+<link rel="manifest" href="favicon_io/site.webmanifest">
+   
+   <!--valores del font-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Spline+Sans:wght@500&display=swap" rel="stylesheet">
+
+   </head>
+  <body>
+
+    <header>
+
+      <nav class="nav">
+
+        <!-- Toda la parte del logo-->
+        <div class="contenedor-logo">
+          <img class="logo" src="imagen/logo.png">
+          <a href="../index.html" class="letra-logo">aMovie</a>
+        </div>
+
+        <!-- Boton de luna y sol-->
+        <div class="swich-buton">
+
+          <button class="switch"id="switch">
+            <span class="sol"><i class="fas fa-sun"></i></span>
+            <span class="luna"><i class="fas fa-moon"></i></span>
+          </button>
+
+        </div>
+
+        <!-- Boton de cerrar y abrir el menu-->
+        <div>
+          <button class="nav-toggle visible " id="toggle">
+            <i class="toggle__line" id=""></i>
+          </button>
+        </div>
+
+        <!-- Menu de navegacion-->
+        <ul class="nav-menu">
+          
+          <!-- Submenu de redes sociales-->
+          <li><a href="#" class=" font btn-submenu-redes letra-redes">Redes sociales<i class="fas fa-caret-down"></i></a>
+            <ul class="submenu-redes">
+            <li><a class="font" href="https://bit.ly/3uA0suF"target="_blank" >Instagram</a></li>
+            <li><a class="font" href="https://bit.ly/34s62Vh"target="_blank" >Facebook</a></li>
+            <li><a class="font" href="https://bit.ly/3Jeio2g"target="_blank" >Youtube</a></li>
+            <li><a class="font" href="https://bit.ly/3HFHkz6"target="_blank">Tiktok</a></li>
+            </ul>
+          </li>
+              <!--Donar-->
+          <li><a href="Donacion/Donacion.html" class="font">Donar<a></li>
+            <!-- submenu de idiomas-->
+          <li><a href="#" class=" font btn-submenu-idiomas letra-idioma">Idiomas<i class="fas fa-caret-down"></i></a>
+              <ul class="submenu-idiomas">
+                <li><a class="font">Portugués</a></li>
+                <li><a class="font">Francés</a></li>
+                <li><a class="font">Español</a></li>
+                <li><a class="font">Inglés</a></li>
+              </ul>
+            </li>
+            <!--¿Que somos? -->
+          <li><a href="Contacto/Contacto.html" class="font">Contacto
+          </a></li>
+              <!-- Boton iniciar -->
+          <li><button id="google-sesion" class = "boton-sesion">Sesión Google</button></li>
+        </ul>
+      </nav>
+    </header>
+
+
+
+    <div class="contenedor-banner">
+        <div class="banner">
+            <div class="contenidos-banner">
+            <h1 class="solo-disfrute">
+              Solo Disfrute</h1>
+            <h3 class="descripcion">Descargue y vea todo el entretenimiento que desee totalmente gratis con límite de tiempo
+            y sin anuncios.</h3>
+          <button class="boton-banner">Accede</button></a>
+           </div>
+           <div class="animacion">
+             <ul>
+               <li><img class="animacion-imagen" src="imagen/cap1.png"></li>
+               <li><img class="animacion-imagen" src="imagen/cap2.png"></li>
+               <li><img class="animacion-imagen" src="imagen/cap3.png"></li>
+               <li><img class="animacion-imagen" src="imagen/cap4.png"></li>
+             </ul>
+           </div>    
+        </div>   
+    </div>
+
+    <div class="contenedor-seccion">
+      <div class="seccion">
+        <div class="caja-peliculas">
+          <img class="imagen-caja-peliculas" src="imagen/peliculas.jpg" alt="">
+          <h1 class="nom-cuadro-peliculas">Películas</h1>
+        </div>
+       <div class="caja-series">
+        <img class="imagen-caja-series" src="imagen/series.jpeg" alt="">
+         <h1 class="nom-cuadro-series">Series</h1>
+       </div>
+       <div class="caja-animes">
+         <img class="imagen-caja-animes" src="imagen/animes.jpg" alt="">
+          <h1 class="nom-cuadro-animes">Animes</h1>
+       </div>
+       </div>
+    </div>
+
+    <div class="contenedor-seccion2">
+      <div class="seccion2">
+        <div class="grid publicidad">
+          <img class="imagen-publicidad" src="imagen/ads.png" alt="">
+          <h1 class="cero">Cero anuncios molestos</h1>
+        </div>
+        <div class="grid gratis">
+          <img class="imagen-gratis" src="imagen/gratis.png" alt="">
+          <h1 class="degratis">Totalmente gratis</h1>
+        </div>
+        <div class="grid divboton">
+         <a href="/donar/donar.html"><button class="botondonar"> Donar a aMovie</button></a>
+        </div>
+     </div>
+    </div>
+     
+    <footer class="contenedor-footer">
+        <div class="footer">
+            <div class="caja-des-movie">
+            <img class="logo-footer" src="imagen/logo.png" alt="">
+            <h3 class="demovie">aMovie</h3>
+            <h1 class="des-movie">Es una plataforma desarrollada por Woody con el objetivo de compartir películas,series y animes con sus seguidores de redes sociales.</h1>
+            </div>
+            <div class="lasredes">
+              <h1 class="lared lared1">Redes sociales</h1>
+              <a href="https://bit.ly/3uA0suF"target="_blank"><h1 class="font lared">Instagram</h1></a>
+              <a href="https://bit.ly/34s62Vh"target="_blank"><h1 class="font lared">Facebook</h1></a>
+              <a href="https://bit.ly/3Jeio2g"target="_blank" ><h1 class="font lared">YouTube</h1></a>
+              <a href="https://bit.ly/3HFHkz6"target="_blank"><h1 class=" font lared">Tiktok</h1></a>   
+            </div>
+            <div class="misredes">
+              <h1 class="lared lared2">Redes de Woody</h1>
+              <a href="https://bit.ly/3sCRyeP"target="_blank"><h1 class=" font lared">Twitch</h1></a>
+              <a href="https://bit.ly/3tqFiNC"target="_blank"><h1 class=" font lared">YouTube</h1></a>
+              <a href="https://bit.ly/3sCwsgq"target="_blank"><h1 class=" font lared">Instagram</h1></a>
+              <a href="https://bit.ly/3HGNFto"target="_blank"><h1 class=" font lared">Tiktok</h1></a>   
+            </div>
+            <div class="copi">
+              <p class="hcopi">Todos los derechos reservados © 2022 <b>aMovie</b></p>
+            </div>             
+        </div>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+
+    <script>
+      const firebaseConfig = {
+	    apiKey: "AIzaSyDqAustDiErdJlip_udPvXHrRXEIeMnkQ8",
+	    authDomain: "amovie-79bd6.firebaseapp.com",
+	    projectId: "amovie-79bd6",
+	    storageBucket: "amovie-79bd6.appspot.com",
+	    messagingSenderId: "704116904880",
+	    appId: "1:704116904880:web:7cca62fe441c4e6e34fc75"
+  };
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+  </body>
+
+</html>
+
+
+
